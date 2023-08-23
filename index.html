@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sikanoppapeli</title>
+</head>
+<body>
+    <h1>Sikanoppapeli</h1>
+    <div class="text">
+        <div id="aloitus" class="aloitus">
+            <div class="pelaajaValinta" style="display: flex; width: 400px ; margin: auto; align-items: center; justify-content: center; margin-bottom: 10px">
+                <p id="ohje" style="margin-right: 4px">Valitse pelaajien määrä:</p>
+                <select name="pelaajat" id="pelmaara">
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <input id="nopat1Nappi" style="width: 80px; font-size: 15px" type="button" value="1 noppa">
+            <input id="nopat2Nappi" style="width: 80px; font-size: 15px" type="button" value="2 noppaa">
+        </div>
+
+        <div id="nimiValinta" class="nimiValinta" style="display: none; width: 400px; margin: auto; justify-content: center; align-items: center; grid-template-columns: 100px 200px;">
+            <p>Pelaaja 1:</p>
+            <input id="pelaaja1txt" class="nimet" type="text">
+            <p>Pelaaja 2:</p>
+            <input id="pelaaja2txt" class="nimet" type="text">
+            <p id="pelaaja3" style="display: none">Pelaaja 3:</p>
+            <input id="pelaaja3txt" class="nimet" style="display: none" type="text">
+            <p id="pelaaja4" style="display: none">Pelaaja 4:</p>
+            <input id="pelaaja4txt" class="nimet" style="display: none" type="text">
+        </div>
+
+        <input id="aloitaPeli" type="button" value="Aloita peli" style="width: 120px; font-size: 15px; margin: auto; margin-top: 4px; display: none">
+
+        <div id="peli" class="peli" style="display: none; width: 800px; margin: auto;">
+            <p></p>
+            <p style="font-size: 24px; margin: auto">Noppa:</p>
+            <p id="noppaNumero" style="font-size: 60px; margin: auto">0</p>
+            <p id="naytaPisteet" style="font-size: 20px; margin: auto">Pisteet tällä kierroksella: 0</p>
+            <input id="heitaNappi" type="button" value="Heitä noppaa">
+            <input id="lopetaNappi" type="button" value="Lopeta vuoro">
+        </div>
+
+        <div id="peli2" class="peli" style="display: none; width: 800px; margin: auto;">
+            <p></p>
+            <p style="font-size: 24px; margin: auto">Nopat:</p>
+            <div id="nopat" style="display: grid; grid-template-columns: 60px 60px; width: 120px; margin: auto">
+                <p id="noppa1Numero" style="font-size: 60px; margin: auto">0</p>
+                <p id="noppa2Numero" style="font-size: 60px; margin: auto">0</p>
+            </div>
+            <p id="naytaPisteet2" style="font-size: 20px; margin: auto">Pisteet tällä kierroksella: 0</p>
+            <input id="heita2Nappi" type="button" value="Heitä noppia">
+            <input id="lopeta2Nappi" type="button" value="Lopeta vuoro">
+        </div>
+
+        <div id="tilanne">
+            <p id="vuoroDisplay" style="font-size: 20px"></p>
+            <p id="p1piste"></p>
+            <p id="p2piste"></p>
+            <p id="p3piste"></p>
+            <p id="p4piste"></p>
+        </div>
+
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Oswald', Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.5;
+    background-color: aquamarine;
+    font-weight: normal;
+}
+
+a {
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h1 {
+font-weight: normal;
+margin: 0px;
+top: 2%;
+position: fixed;
+right: 37%;
+text-align: center;
+font-family: 'Oswald', Helvetica, sans-serif;
+font-size: 70px;
+transform: skewY(-2deg);
+letter-spacing: 4px;
+color: rgb(255, 255, 255);
+text-shadow: 
+  -1px -1px 0 rgb(0, 0, 0),
+  -2px -2px 0 rgb(0, 0, 0),
+  -3px -3px 0 rgb(0, 0, 0),
+  -4px -4px 0 rgb(0, 0, 0),
+  -5px -5px 0 rgb(0, 0, 0),
+  -6px -6px 0 rgb(0, 0, 0),
+  -7px -7px 0 rgb(0, 0, 0),
+
+  -8px -8px 0 rgb(0, 0, 0),
+  -30px 20px 40px rgb(0, 0, 0)
+
+}
+
+h2, h3, h4 {
+    
+    font-weight: normal;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    row-gap: 20px;
+}
+
+button, input[type=submit], input[type=button] {
+    border: 1px solid black;
+    background-color:#111;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    padding: 2px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.2s;
+}
+
+button, input[type=submit], input[type=button]:hover {
+    border: 1px solid black;
+    background-color:white;
+    color:#111;
+}
+
+input[type=text], input[type=password] {
+    border: none;
+    border-radius: 0px;
+    padding: 2px;
+    outline: none;
+}
+
+select {
+    background-color:#111;
+    color:white;
+    cursor: pointer;
+    border: none;
+    border-radius: 0px;
+    padding: 2px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    margin: auto;
+}
+
+.text {
+    
+    text-align: center;
+    padding: 130px;
+}
+
+.nottext {
+    
+    max-width: 400px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.nappi input[type=button] {
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: width 100ms, height 100ms, font-size 100ms;
+}
+
+.nappi input[type=button]:active {
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.nimet {
+    width: 200px;
+}
+
+@media (max-width: 1220px) {
+    .grid {
+        width: auto;
+    }
+}
